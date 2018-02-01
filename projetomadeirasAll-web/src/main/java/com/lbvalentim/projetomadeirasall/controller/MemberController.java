@@ -19,8 +19,8 @@ package com.lbvalentim.projetomadeirasall.controller;
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.enterprise.inject.Produces;
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
+//import javax.faces.application.FacesMessage;
+//import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -34,8 +34,8 @@ import com.lbvalentim.projetomadeirasall.service.MemberRegistration;
 @Model
 public class MemberController {
 
-    @Inject
-    private FacesContext facesContext;
+//    @Inject
+//    private FacesContext facesContext;
 
     @Inject
     private MemberRegistration memberRegistration;
@@ -51,13 +51,13 @@ public class MemberController {
     public void register() throws Exception {
         try {
             memberRegistration.register(newMember);
-            facesContext.addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Registered!", "Registration successful"));
+//            facesContext.addMessage(null,
+//                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Registered!", "Registration successful"));
             initNewMember();
         } catch (Exception e) {
             String errorMessage = getRootErrorMessage(e);
-            FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_ERROR, errorMessage, "Registration Unsuccessful");
-            facesContext.addMessage(null, m);
+//            FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_ERROR, errorMessage, "Registration Unsuccessful");
+//            facesContext.addMessage(null, m);
         }
     }
 

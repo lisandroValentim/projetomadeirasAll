@@ -5,6 +5,10 @@
         enabled="true" use-java-context="true">
         <connection-url>jdbc:postgresql://localhost:5432/madeirasdb</connection-url>
         <driver>org.postgresql</driver>
+        <pool>
+            <min-pool-size>4</min-pool-size>
+            <max-pool-size>4</max-pool-size>
+        </pool>
         <security>
             <user-name>postgres</user-name>
             <password>postgres</password>
