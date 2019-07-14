@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.lbvalentim</groupId>
     <artifactId>projetomadeirasAll</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT-Release</version>
     <packaging>pom</packaging>
 
     <url>http://wildfly.org</url>
