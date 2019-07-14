@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  */
 public class Produto {
     private Long id_produto;
-    private String descricao;
+    private String descProduto;
     private String especie;
     private String unidade_medida;
     private String tipo_madeira;
@@ -28,12 +28,12 @@ public class Produto {
         this.id_produto = id_produto;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getDescProduto() {
+        return descProduto;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescProduto(String descProduto) {
+        this.descProduto = descProduto;
     }
 
     public String getEspecie() {

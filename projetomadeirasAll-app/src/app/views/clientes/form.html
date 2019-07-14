@@ -10,12 +10,15 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>CPF/CNPJ</label>
-                        <input type="text" ng-model="vm.record.cpfCnpj" class="form-control">
+                        <input class="form-control number" id="cad_cpf_cnpj" type="text" name="cpf-cnpj"  onBlur="vm.ValidarCPF(cpf_cnpj)" ng-model="vm.record.cpfCnpj" ui-br-cpfcnpj-mask>
+                        <p style="color:red;font-size:10pc !important;display:none">CPF/CNPJ obrigatório</p>
                         <small class="form-text text-muted">Digite um CPF ou CNPJ válido.</small>
-                    </div>
+                    </div>  
+
                     <div class="form-group col-md-6">
                         <label>RG/Inscrição Estadual</label>
-                        <input type="text" ng-model="vm.record.rgInscrEst" class="form-control">
+                        <select ng-init="ufs=['SC']" ng-model="selectedUF" ng-options="uf for uf in ufs"></select>
+                        <input type="text" ng-model="vm.record.rgInscrEst" ui-br-ie-mask='selectedUF' class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -33,7 +36,7 @@
                     </div>
                     <div class="form-group col-md-4">
                         <label>Telefone</label>
-                        <input type="text" ng-model="vm.record.telefone" class="form-control">
+                        <input type="text" ng-model="vm.record.telefone" ui-br-phone-number-mask class="form-control">
                     </div>
                 </div>
                 <button ng-click="vm.save()" type="button" class="btn btn-primary btn-lg">Salvar Registro</button>

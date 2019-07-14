@@ -6,7 +6,7 @@ import { default as inputMasks } from 'angular-input-masks'
 import { default as flatpickr } from 'ng-flatpickr'
 import { mainConfig } from './main/config'
 import { clienteConfig } from './clientes/config'
-//import { produtoConfig } from './produtos/config'
+import { produtoConfig } from './produtos/config'
 //import { pedidoConfig } from './pedidos/config'
 
 require('angular-i18n/angular-locale_pt-br.js')
@@ -17,5 +17,5 @@ var modulo = angular.module(appModule, [uiRouter, uiNotification, inputMasks, fl
 
 modulo.config(mainConfig(modulo))
       .config(clienteConfig(modulo))
-  //    .config(produtoConfig(modulo))
+      .config(produtoConfig(modulo))
     //  .config(pedidoConfig(modulo))
