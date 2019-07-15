@@ -22,4 +22,10 @@ public class ProdutoService extends AbstractCrudService<Produto> {
     protected GenericDao<Produto> getDao() {
         return dao;
     }    
+
+    public ProdutoService() {
+        //this.dao = dao;
+    }
+    
+    
 }
