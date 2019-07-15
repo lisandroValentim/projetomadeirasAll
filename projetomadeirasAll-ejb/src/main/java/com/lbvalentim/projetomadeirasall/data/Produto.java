@@ -15,7 +15,7 @@ public class Produto {
     private String tratamento;
     private BigDecimal qtd_estoque;
     private BigDecimal preco;
-    private String tabela_tipi;
+    private String tabela_tipi; //Teste
 
     public Produto() {
     }
