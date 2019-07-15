@@ -12,7 +12,7 @@ public class Cliente {
     private String email;
     private String endereco;
     private String cidade;
-    private String Telefone;
+    private String Telefone; // Teste do git
 
     public Cliente() {
     }
@@ -81,5 +81,7 @@ public class Cliente {
         this.Telefone = Telefone;
     }
     
-    
+    public String getQualquerCoisa() {
+        return Telefone;
+    }
 }
